@@ -1,6 +1,6 @@
-//============================================================
-// Base Element Styles
-//============================================================
+/* ================================
+    Base Element Styles
+   ================================ */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -16,31 +16,93 @@ body {
 
 h1, h2, h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
 }
 
 h2, h3 {
   color: #4aaaa5;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
 }
 
 h1 {
   font-size: 1.5rem;
-  font-weight: bold;
   letter-spacing: 2px;
   color: #fff;
   background-color: #4aaaa5;
-  padding: 10px 0;
+  padding: 15px 0;
   margin-bottom: 10px;
   box-shadow: 0 1px 15px 0 #000;
 }
 
-a {
-  line-height: 1.75;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #777;
+h2 {
+  font-size: 1.4rem;
 }
 
-img {
-  width: 25%;
-  height: auto;
+h3 {
+  font-size: 1.2rem;
 }
+
+a {
+  text-decoration: none;
+}
+
+section {
+  text-align: left;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
+section div {
+  padding-top: 15px;
+}
+
+section:first-child {
+  margin-bottom: 50px;
+}
+
+p {
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* ================================
+    Base Layout Styles
+   ================================ */
+
+/* --------- Navigation -------- */
+
+.page-links {
+  display: block;
+  line-height: 1.75;
+  font-size: 1.2rem;
+  color: #777;
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+}
+
+.page-links:hover {
+  color: #fff;
+  background-color: #678d8b;
+}
+
+/* ----- Layout Containers ----- */
+
+
+/* ------- Page Elements ------- */
+
+#profile-image {
+  float: left;
+  width: 120px;
+  height: auto;
+  padding-right: 10px;
+}
+
+.social-images {
+  width: 64px;
+  margin-right: 10px;
+}
+
+/* ================================
+    Media Queries
+   ================================ */
