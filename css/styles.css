@@ -185,6 +185,10 @@ footer {
 
   /* --------- Navigation -------- */
   
+  .page-links {
+    font-size: 1.2rem;
+  }
+  
   .page-links:hover {
     background-color: #e6e6e6;
   }
@@ -210,6 +214,10 @@ footer {
   section {
     margin: 50px 25px;
     padding: 25px;
+  }
+  
+  section div {
+    padding-top: 20px;
   }
   
   footer {
