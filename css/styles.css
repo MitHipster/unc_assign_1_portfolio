@@ -25,7 +25,6 @@ h1, h2, h3 {
 h2, h3 {
   color: #4aaaa5;
   border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
 }
 
 h1 {
@@ -40,10 +39,12 @@ h1 {
 
 h2 {
   font-size: 1.4rem;
+  padding-bottom: 10px;  
 }
 
 h3 {
   font-size: 1.2rem;
+    padding-bottom: 15px;
 }
 
 li {
@@ -67,7 +68,7 @@ p {
 
 .page-links {
   display: block;
-  width: 100px;
+  width: 94px;
   line-height: 1.75;
   font-size: 1.1rem;
   color: #777;
@@ -86,6 +87,8 @@ p {
 
 main {
   flex-grow: 1;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 section {
@@ -190,12 +193,18 @@ footer {
   /* ----- Layout Containers ----- */
   
   header {
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 960px;
     background-color: #fff;
+    margin: 0 auto;
     padding: 0 25px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
   }
   
   section {
@@ -217,13 +226,20 @@ footer {
   
   .social-images {
     width: 64px;
-    margin-bottom: 10px;
+  }
+  
+  .social-images:hover {
+    transform: scale(1.1);
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 800px) {
   main {
     display: flex;
     justify-content: space-between;
+  }
+  
+  .social-images {
+    margin-bottom: 10px;
   }
 }
