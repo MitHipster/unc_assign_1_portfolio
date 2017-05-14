@@ -34,8 +34,8 @@ h1 {
   color: #fff;
   background-color: #4aaaa5;
   padding: 15px 0;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 15px 0 #000;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 h2 {
@@ -44,6 +44,10 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+li {
+  display: inline-block;
 }
 
 a {
@@ -63,15 +67,19 @@ p {
 
 .page-links {
   display: block;
+  width: 100px;
   line-height: 1.75;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #777;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+.page-links.active {
+  color: #4aaaa5;
 }
 
 .page-links:hover {
-  color: #fff;
-  background-color: #678d8b;
+  background-color: #f5f5f5;
 }
 
 /* ----- Layout Containers ----- */
@@ -83,12 +91,26 @@ main {
 section {
   text-align: left;
   background-color: #fff;
-  margin: 10px 10px 50px;
-  padding: 10px;
+  margin: 15px 15px 50px;
+  padding: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+section:last-child {
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: -fit-content;
 }
 
 section div {
   padding-top: 15px;
+}
+
+.social-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 180px;
+  justify-content: space-around;
 }
 
 footer {
@@ -97,7 +119,7 @@ footer {
   background-color: #666;
   border-top: 10px solid #4aaaa5;
   padding: 20px 0;
-  box-shadow: 0 -1px 15px 0 #000;
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* ------- Page Elements ------- */
@@ -110,8 +132,12 @@ footer {
 }
 
 .social-images {
-  width: 64px;
-  margin-right: 10px;
+  width: 48px;
+  transition: transform 0.4s ease-out;
+}
+
+.social-images:hover {
+  transform: scale(1.15);
 }
 
 #copyright {
@@ -121,3 +147,83 @@ footer {
 /* ================================
     Media Queries
    ================================ */
+
+@media (min-width: 600px) {
+  
+  /* ================================
+    Base Element Styles
+   ================================ */
+  
+  h1 {
+    width: 220px;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    padding: 25px 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  /* ================================
+    Base Layout Styles
+   ================================ */
+
+  /* --------- Navigation -------- */
+  
+  .page-links:hover {
+    background-color: #e6e6e6;
+  }
+  
+  
+  /* ----- Layout Containers ----- */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 25px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  section {
+    margin: 50px 25px;
+    padding: 25px;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    padding: 30px 0;
+  }
+  
+  /* ------- Page Elements ------- */
+  
+  #profile-image {
+    width: 185px;
+    padding-right: 10px;
+  }
+  
+  .social-images {
+    width: 64px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 840px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+}
