@@ -1,0 +1,23 @@
+/* ================================
+    Form Styles
+   ================================ */
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+}
