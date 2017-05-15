@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-    padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 li {
@@ -97,12 +97,6 @@ section {
   margin: 15px 15px 50px;
   padding: 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-}
-
-section:last-child {
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: -fit-content;
 }
 
 section div {
@@ -171,7 +165,7 @@ footer {
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
   
   p {
@@ -245,9 +239,10 @@ footer {
   main {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   
-  .social-images {
-    margin-bottom: 10px;
+  .top-row.social-images {
+    margin-bottom: 20px;   
   }
 }
