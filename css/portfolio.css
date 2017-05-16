@@ -1,0 +1,37 @@
+/* ================================
+    Portfolio Styles
+   ================================ */
+
+.portfolio-container {
+  
+}
+
+figure {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 15px;;
+}
+
+figure:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #4aaaa5;
+}
+
+.portfolio-link {
+  display: block;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 15px 0;
+}
