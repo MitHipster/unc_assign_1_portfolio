@@ -2,18 +2,10 @@
     Portfolio Styles
    ================================ */
 
-.portfolio-container {
-  
-}
-
 figure {
   position: relative;
   text-align: center;
-  margin: 0 auto 15px;;
-}
-
-figure:last-child {
-  margin-bottom: 0;
+  margin: 0 auto 20px;
 }
 
 img {
@@ -34,4 +26,23 @@ figcaption {
   letter-spacing: 1px;
   color: #fff;
   padding: 15px 0;
+}
+
+@media (max-width: 799px) and (min-width: 540px), (min-width: 870px) {
+  .portfolio-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  figure {
+    width: 48.5%;
+    height: auto;
+    margin: 0 0 20px;
+  }
 }
